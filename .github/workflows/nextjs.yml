@@ -76,9 +76,7 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
-        name: export static files
-        run: npm run export
-      - name: Upload artifact
+       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
